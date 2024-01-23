@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* Overall style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    background-color: #0A192F;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 50px;
+}
+
+
+/* Style for logo-search-bar */
+.logo-search-bar {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+form {
+    background-color: #CBD5F5;
+    height: 45px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+input {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 24px 20px;
+    font-size: medium;
+    color: #111013;
+}
+
+::placeholder {
+    color: #111013;
+}
+
+.form-button img {
+   width: 13px;
+}
+
+.form-button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+
+}
+
+.logo-img {
+    width: auto;
+}
+
+.resume {
+    background-color: #CBD5F5;
+    border: 1px solid #CBD5F5;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 60px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.resume:hover{
+    background-color: #0A192F;
+    color: #64FDDA;
+}
+
+/* Style for category-menu */
+.category-menu {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+
+/* Style for posts-container */
+.posts-container {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+/* Style for separator */
+.separator {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    background-color: #cbd5f53d;
+    height: 0.1px;
+    border: none;
+    cursor: none;
+}
+
+
+
+
+
+
+
+
+
