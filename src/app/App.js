@@ -5,8 +5,8 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<COMPONENTS.AppLayout />}>
-                    <Route path="" element={<COMPONENTS.Home />} />
+                <Route path="/Reddit-App" element={<COMPONENTS.AppLayout />}>
+                    <Route path="/Reddit-App" element={<COMPONENTS.Home />} />
                     <Route path="popular" element={<COMPONENTS.PopularPosts />} />
                     <Route path="LeagueOfLegends" element={<COMPONENTS.LeagueOfLegends />} />
                 </Route>
