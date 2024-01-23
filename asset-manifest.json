@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Reddit-App/static/css/main.d13c58dd.css",
+    "main.js": "/Reddit-App/static/js/main.773341df.js",
+    "static/media/reddit-logo.png": "/Reddit-App/static/media/reddit-logo.23bd6189844c2f5c6814.png",
+    "static/media/Mateusz_Otorowski_CV_aktualne.pdf": "/Reddit-App/static/media/Mateusz_Otorowski_CV_aktualne.b6021e27d365cc9d7372.pdf",
+    "index.html": "/Reddit-App/index.html",
+    "main.d13c58dd.css.map": "/Reddit-App/static/css/main.d13c58dd.css.map",
+    "main.773341df.js.map": "/Reddit-App/static/js/main.773341df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d13c58dd.css",
+    "static/js/main.773341df.js"
+  ]
+}
