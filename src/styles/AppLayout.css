@@ -44,7 +44,7 @@ form {
 
 input {
     background: transparent;
-    flex: 1;
+    width: 100%;
     border: none;
     outline: none;
     padding: 24px 20px;
@@ -69,38 +69,60 @@ input {
     cursor: pointer;
 }
 
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
+
+.menu button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.menu img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
 .logo {
     width: 40px;
     height: 40px;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-img {
-    width: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.download-link {
+    text-decoration: none;
 }
 
 .resume {
     background-color: #CBD5F5;
     border: 1px solid #CBD5F5;
-    height: 40px;
+    height: 45px;
     cursor: pointer;
     border-radius: 60px;
     padding: 10px 20px;
     transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume:hover{
     background-color: #0A192F;
     color: #64FDDA;
 }
-
-/* Style for category-menu */
-.category-menu {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-}
-
 
 /* Style for posts-container */
 .posts-container {
@@ -119,7 +141,50 @@ input {
 }
 
 
+/* Style for smaller devices */
 
+@media screen and (max-width: 1150px) {
+
+    .resume-container {
+        display: none;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    form {
+        width: 90%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-search-bar {
+        column-gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .posts-container {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input {
+        width: 85%;
+    }
+    
+}
 
 
 

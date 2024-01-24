@@ -9,6 +9,13 @@ const App = () => {
                     <Route path="/Reddit-App" element={<COMPONENTS.Home />} />
                     <Route path="popular" element={<COMPONENTS.PopularPosts />} />
                     <Route path="LeagueOfLegends" element={<COMPONENTS.LeagueOfLegends />} />
+                    <Route path="NBA" element={<COMPONENTS.NBA />} />
+                    <Route path="PremierLeague" element={<COMPONENTS.PremierLeague />} />
+                    <Route path="Tesla" element={<COMPONENTS.Tesla />} />
+                    <Route path="SpaceX" element={<COMPONENTS.SpaceX />} />
+                    <Route path="Bitcoin" element={<COMPONENTS.Bitcoin />} />
+                    <Route path="DojaCat" element={<COMPONENTS.DojaCat />} />
+                    <Route path="KimKardashian" element={<COMPONENTS.KimKardashian />} />
                 </Route>
             </Routes>
         </BrowserRouter>

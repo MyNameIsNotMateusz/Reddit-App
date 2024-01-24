@@ -1,7 +1,7 @@
 const ROUTES = {
-    homeRoute: () => "/",
-    popularRoute: () => "/popular",
-    selectedTopicRoute: (id) => `/${id}`,
+    homeRoute: () => "/Reddit-App",
+    popularRoute: () => "/Reddit-App/popular",
+    selectedTopicRoute: (id) => `/Reddit-App/${id}`,
 }
 
 export default ROUTES;
