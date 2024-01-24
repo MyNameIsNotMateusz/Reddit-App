@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/Reddit-App/static/css/main.d13c58dd.css",
-    "main.js": "/Reddit-App/static/js/main.93c3a33e.js",
+    "main.css": "/Reddit-App/static/css/main.4f89b977.css",
+    "main.js": "/Reddit-App/static/js/main.2cd31e8c.js",
+    "static/media/spaceX.png": "/Reddit-App/static/media/spaceX.2dd327fdb7bcdae11760.png",
+    "static/media/premierleague.png": "/Reddit-App/static/media/premierleague.0fdfc0e65c0e0d041df7.png",
+    "static/media/nba.png": "/Reddit-App/static/media/nba.0b6bca816e61b243bbd4.png",
+    "static/media/bitcoin.png": "/Reddit-App/static/media/bitcoin.29a7f904343469218ca7.png",
+    "static/media/kimkardashian.png": "/Reddit-App/static/media/kimkardashian.e8afeefb9d77b9f504b9.png",
+    "static/media/dojacat.png": "/Reddit-App/static/media/dojacat.881d2b1e9638e30d2c76.png",
+    "static/media/LeagueOfLegends.png": "/Reddit-App/static/media/LeagueOfLegends.d34cadb04361d55ace0e.png",
     "static/media/reddit-logo.png": "/Reddit-App/static/media/reddit-logo.23bd6189844c2f5c6814.png",
     "static/media/Mateusz_Otorowski_CV_aktualne.pdf": "/Reddit-App/static/media/Mateusz_Otorowski_CV_aktualne.b6021e27d365cc9d7372.pdf",
+    "static/media/tesla.png": "/Reddit-App/static/media/tesla.ef778d3188e9d1190ba1.png",
+    "static/media/home.png": "/Reddit-App/static/media/home.51a14f3d3716c8ece789.png",
     "index.html": "/Reddit-App/index.html",
-    "main.d13c58dd.css.map": "/Reddit-App/static/css/main.d13c58dd.css.map",
-    "main.93c3a33e.js.map": "/Reddit-App/static/js/main.93c3a33e.js.map"
+    "main.4f89b977.css.map": "/Reddit-App/static/css/main.4f89b977.css.map",
+    "main.2cd31e8c.js.map": "/Reddit-App/static/js/main.2cd31e8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d13c58dd.css",
-    "static/js/main.93c3a33e.js"
+    "static/css/main.4f89b977.css",
+    "static/js/main.2cd31e8c.js"
   ]
 }
