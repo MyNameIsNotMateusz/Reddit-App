@@ -1,20 +1,31 @@
 import { useDispatch, useSelector } from "react-redux";
-import { loadHomeData, selectHome } from "../features/homeSlice";
+import { loadHomeData, selectHome, filterData } from "../features/homeSlice";
 import { useEffect } from "react";
 import "../styles/Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowsUpDown, faComment, faCircle } from '@fortawesome/free-solid-svg-icons'
-
+import { useOutletContext } from "react-router-dom";
 
 const Home = () => {
 
+    //Create a dispatch variable to trigger actions in redux.
     const dispatch = useDispatch();
 
+    //Download posts to the current component after it is loaded.
     useEffect(() => {
         dispatch(loadHomeData())
     }, [])
 
+    //Create a homeData variable that stores an object with all posts.
     const homeData = useSelector(selectHome);
+
+    //Save the value passed to context into the searchValue variable
+    const searchValue = useOutletContext();
+
+    //Triggers an action that filters posts every time I type something into the search engine.
+    useEffect(() => {
+        dispatch(filterData(searchValue));
+    }, [searchValue])
 
     return (
         <div className="home">

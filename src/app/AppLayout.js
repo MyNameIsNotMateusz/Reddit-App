@@ -1,16 +1,19 @@
-import { NavLink, Outlet } from "react-router-dom";
-import ROUTES from "./routes";
+import { Outlet } from "react-router-dom";
 import RESOURCES from "../data/resources";
-import styles from "../styles/AppLayout.css";
-import Categories from "../components/Categories";
+import "../styles/AppLayout.css";
 import COMPONENTS from "../data/components";
+import { useState } from "react";
 
 const AppLayout = () => {
 
+  //This feature adds an "open" class that shows the category bar on devices that are less than 720px wide.
   const showCategories = () => {
     const categories = document.querySelector(".category-menu");
     categories.classList.toggle('open');
   }
+
+  //The searchPost variable stores the current search string.
+  const [searchPost, setSearchPost] = useState("");
 
   return (
     <div className="container">
@@ -28,7 +31,8 @@ const AppLayout = () => {
         <form>
           <input
             type="text"
-            placeholder="search anything" />
+            placeholder="search anything"
+            onChange={(e) => setSearchPost(e.target.value)} />
           <div>
             <button
               type="submit">
@@ -48,7 +52,7 @@ const AppLayout = () => {
       </div>
       <COMPONENTS.Categories />
       <div className="posts-container">
-        <Outlet />
+        <Outlet context={searchPost} />
       </div>
     </div>
   )
