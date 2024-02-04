@@ -21,8 +21,8 @@ body {
 }
 
 
-/* Style for logo-search-bar */
-.logo-search-bar {
+/* Style for container__nav */
+.container__nav {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     display: flex;
@@ -32,11 +32,15 @@ body {
 }
 
 form {
+    position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
     background-color: #CBD5F5;
     height: 45px;
     width: 40%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 60px;
     padding: 10px 20px;
     backdrop-filter: blur(4px) saturate(180%);
@@ -56,20 +60,23 @@ input {
     color: #111013;
 }
 
-.form-button img {
-   width: 13px;
-}
-
-.form-button {
+form div button {
     border: 0;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     background: #58629b;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu {
+form div button img {
+    width: 13px;
+ }
+
+.container__nav-menu {
     display: none;
     align-items: center;
     justify-content: center;
@@ -77,19 +84,19 @@ input {
     height: 15px;
 }
 
-.menu button {
+.container__nav-menu button {
     border: none;
     background: none;
     padding: 0;
 }
 
-.menu img {
+.container__nav-menu img {
     width: 15px;
     height: 15px;
     cursor: pointer;
 }
 
-.logo {
+.container__nav-logo {
     width: 40px;
     height: 40px;
     display: flex;
@@ -97,16 +104,16 @@ input {
     justify-content: center;
 }
 
-.logo-img {
+.container__nav-logo img {
     width: 40px;
     height: 40px;
 }
 
-.download-link {
+.container__nav-resume a {
     text-decoration: none;
 }
 
-.resume {
+.container__nav-resume button {
     background-color: #CBD5F5;
     border: 1px solid #CBD5F5;
     height: 45px;
@@ -119,7 +126,7 @@ input {
     align-items: center;
 }
 
-.resume:hover{
+.container__nav-resume button:hover{
     background-color: #0A192F;
     color: #64FDDA;
 }
@@ -145,30 +152,36 @@ input {
 
 @media screen and (max-width: 1150px) {
 
-    .resume-container {
+    .container__nav-resume {
         display: none;
     }
 
     form {
         width: 50%;
+        left: auto;
+        transform: none;
+        right: 50px;
     }
 }
 
 @media screen and (max-width: 550px) {
     form {
-        width: 90%;
+        width: 65%;
     }
 
-    .logo {
-        display: none;
+    .container__nav-logo {
+       display: none;
     }
 
-    .logo-search-bar {
+    .container__nav {
         column-gap: 10px;
+        justify-content: start;
     }
 
-    .menu {
+    .container__nav-menu {
         display: flex;
+        width: 40px;
+        height: 40px;
     }
 
     .posts-container {
@@ -179,11 +192,6 @@ input {
         justify-content: center;
         text-align: center;
     }
-
-    input {
-        width: 85%;
-    }
-    
 }
 
 

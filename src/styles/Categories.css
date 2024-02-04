@@ -43,17 +43,16 @@
 }
 
 .navLink:hover {
- color: #111013;
  background-color: transparent;
- background-color: #CBD5F5;
+ background-color: #cbd5f50e;
 }
 
 
 .navLinkHome {
  margin-bottom: 30px;
- color: #111013;
+ color: white;
  background-color: transparent;
- background-color: #CBD5F5;
+ background-color: #cbd5f50e;
 }
 
 .categoriesSeparator {
@@ -110,6 +109,8 @@
  .category-menu {
     display: none;
     z-index: 1000;
+    height: 54%;
+    background-color: #0A192F;
  }
 
  .open {

@@ -14,33 +14,33 @@ const AppLayout = () => {
 
   return (
     <div className="container">
-      <div className="logo-search-bar">
-        <div className="logo">
+      <div className="container__nav">
+        <div className="container__nav-logo">
           <img
-            className="logo-img"
             src={RESOURCES.redditLogo}
             alt="Logo Reddit" />
         </div>
-        <div className="menu">
+        <div className="container__nav-menu">
           <button>
-          <img onClick={showCategories} src={RESOURCES.menu} alt="menu" />
+            <img onClick={showCategories} src={RESOURCES.menu} alt="menu" />
           </button>
         </div>
         <form>
           <input
             type="text"
             placeholder="search anything" />
-          <button
-            type="submit"
-            className="form-button">
-            <img
+          <div>
+            <button
+              type="submit">
+              <img
               src={RESOURCES.searchButton}
               alt="search button" />
-          </button>
+            </button>
+          </div>
         </form>
-        <div className="resume-container">
-          <a className="download-link" href={RESOURCES.cv} download>
-            <button className="resume">
+        <div className="container__nav-resume">
+          <a href={RESOURCES.cv} download>
+            <button>
               Get Resume
             </button>
           </a>
