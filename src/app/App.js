@@ -7,7 +7,6 @@ const App = () => {
             <Routes>
                 <Route path="/Reddit-App" element={<COMPONENTS.AppLayout />}>
                     <Route path="/Reddit-App" element={<COMPONENTS.Home />} />
-                    <Route path="popular" element={<COMPONENTS.PopularPosts />} />
                     <Route path="LeagueOfLegends" element={<COMPONENTS.LeagueOfLegends />} />
                     <Route path="NBA" element={<COMPONENTS.NBA />} />
                     <Route path="PremierLeague" element={<COMPONENTS.PremierLeague />} />

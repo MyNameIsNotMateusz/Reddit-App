@@ -46,7 +46,6 @@ const AppLayout = () => {
           </a>
         </div>
       </div>
-      <button className="separator" />
       <COMPONENTS.Categories />
       <div className="posts-container">
         <Outlet />

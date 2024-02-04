@@ -15,12 +15,6 @@ const Categories = () => {
     </li>
     <button className="categoriesSeparator" />
     <li>
-      <NavLink className="navLink navLinkPopular" to={ROUTES.popularRoute()}>
-      <img src={RESOURCES.increase} />
-        Popular
-      </NavLink>
-    </li>
-    <li>
       <NavLink className="navLink navLinkLol" to={ROUTES.selectedTopicRoute("LeagueOfLegends")}>
       <img src={RESOURCES.LeagueOfLegendsIcon} />
         League of Legends
